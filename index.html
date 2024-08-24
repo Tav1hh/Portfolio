@@ -31,10 +31,15 @@
 
         <section class="about">
             <h2>Sobre</h2>
-            <p>Sou um <strong>Desenvolvedor de Software</strong>, adoro aprender novas tecnologais e Linguagens, até o momento trabalhei apenas em projetos pessoais, estou ansioso pelo meu primeiro trabalho na area, para finalmente conseguir entrar no mercado de trabalho.</p>
+            <p>Sou um <strong>Desenvolvedor de Software</strong>, adoro aprender novas <strong>Tecnologias e Linguagens</strong>, até o momento trabalhei apenas em projetos pessoais, estou ansioso pelo meu primeiro trabalho na area, para finalmente conseguir entrar no mercado de trabalho.</p>
         </section>
         <section class="projetos">
             <h1>Projetos</h1>
+            <div class="botoes">
+                <div class="left"><button class="btn-left" onclick="javascript:document.querySelector('.carrosel').scrollBy({left:-400, behavior:'smooth'})"></button></div>
+                <div class="right"><button class="btn-right" onclick="javascript:document.querySelector('.carrosel').scrollBy({left:400, behavior:'smooth'})"></button></div>
+            </div>
+
             <div class="carrosel">
                 <div>
                     <h2>Bot Discord</h2>
@@ -65,7 +70,7 @@
     </section>
     </main>
     <footer>
-        <p>Site Criado por &copy; Santiago</p>
+        <p>&copy;2024 Otávio Santiago</p>
         <article>
             <a href="https://www.instagram.com/tavihh/"><img id="icon-instagram" src="imagens/instagram.png" onmouseenter="setImage('icon-instagram','instagram')" onmouseout="resetImage('icon-instagram','instagram')" ></a>
             <a href="https://www.linkedin.com/in/otavio-santiago/"><img id="icon-linkedin" src="imagens/linkedin.png" onmouseenter="setImage('icon-linkedin','linkedin')" onmouseout="resetImage('icon-linkedin','linkedin')"></a>

@@ -16,7 +16,9 @@
 
 body{
     background-color: #34353a;
-    overflow-x: hidden;
+}
+::-webkit-scrollbar{
+    width: 0px;
 }
 
 header{
@@ -139,20 +141,89 @@ header nav a:hover{
 /* Projetos */
 .projetos{
     overflow: hidden;
+    z-index: 1;
 }
 .projetos h1{
     color: white;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .carrosel {
-    animation: carrosel 20s linear infinite;
     display: flex;
-    overflow: hidden;
-    padding: 0pc 50px;
-    padding-top: 20px;
+    z-index: -1;
+    gap: 15px;
+    overflow: auto;
+    animation: carrosel 2s ease-in-out forwards;
+    /* border: 1px solid white; */
     margin: auto;
-    width: min-content;
+    width: 100vw;
+    padding: 10px 50px;
+}
+
+.botoes{
+    all:unset;
+    position: absolute;
+    height: 260px;
+    pointer-events: none;
+    width: 100vw;
+    z-index: inherit;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid blue;
+    border-bottom: 1px solid blue;
+}
+.btn{
+    all:unset;
+    pointer-events: none;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    z-index: 1;
+    /* transform: translateY(120px); */
+}
+
+.right, .left{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 5px;
+    width: 80px;
+    background: linear-gradient(to right, black 10%, transparent 100%);
+}
+
+.right{
+    justify-content: right;
+    background: linear-gradient(to left, black 10%, transparent 100%);
+
+
+}
+.btn-left{
+    /* cursor:pointer; */
+    all:unset;
+    pointer-events: all;
+    background-size: contain;
+    width: 50px;
+    height: 90px;
+    background: url(../imagens/arrow-left.png);
+    transition: translate 0.5s;
+}
+
+
+.btn-right{
+    cursor: pointer;
+    all:unset;
+    pointer-events: all;
+    background-size: contain;
+    width: 50px;
+    height: 90px;
+    background: url(../imagens/arrow-right.png) center center no-repeat ;
+    transition: translate 0.5s;
+}
+
+.btn-right:hover,.btn-left:hover{
+    translate: 0px -10px;
 }
 
 @keyframes carrosel {
@@ -160,24 +231,21 @@ header nav a:hover{
         transform: translateX(100vw);
     }
     to{
-        transform: translateX(calc(-50% - 70vw));
+        /* transform: translateX(calc(-100vw + (100vw - 100%))); */
+        transform: translateX(0px);
     }
 }
 
 .carrosel > div{
     /* animation: carrosel 5s linear infinite alternate; */
-
-    min-width: 223px;
-    max-width: 223px;
-    margin-right: 10px;
+    /* min-width: 223px;
+    max-width: 223px; */
     padding: 5px;
     border-radius: 10px;
-    margin-bottom: 10px;
     border: 1px solid black;
     background-color: rgb(74, 120, 189);
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.214);
     transition: transform 1s, box-shadow 1s;
-    overflow: hidden;
 }
 
 .carrosel > div:hover{
