@@ -136,6 +136,9 @@ header nav a:hover{
 }
 
 /* Projetos */
+.projetos{
+    overflow: hidden;
+}
 .projetos h1{
     color: white;
     text-align: center;
@@ -144,7 +147,7 @@ header nav a:hover{
 .carrosel {
     animation: carrosel 20s linear infinite;
     display: flex;
-    /* overflow: hidden; */
+    overflow: hidden;
     padding: 0pc 50px;
     padding-top: 20px;
     margin: auto;
