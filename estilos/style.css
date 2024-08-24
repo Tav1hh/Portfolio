@@ -151,8 +151,7 @@ header nav a:hover{
     padding: 0pc 50px;
     padding-top: 20px;
     margin: auto;
-    width: max-content;
-    /* max-width: 800px; */
+    width: min-content;
 }
 
 @keyframes carrosel {
@@ -253,7 +252,6 @@ footer{
     background-color: white;
     font-weight: 600;
     text-align: center;
-    /* height: 100px; */
     padding: 5px;
 }
 
