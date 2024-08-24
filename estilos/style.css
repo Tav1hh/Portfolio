@@ -208,6 +208,7 @@ header nav a:hover{
     background: url(../imagens/arrow-left.png) center center no-repeat;
     background-size: contain;
     scale: 0.8;
+    outline: none;
     transition: translate 0.5s;
 }
 
@@ -221,6 +222,7 @@ header nav a:hover{
     background: url(../imagens/arrow-right.png) center center no-repeat ;
     background-size: contain;
     scale: 0.8;
+    outline: none;
     transition: translate 0.5s;
 }
 
