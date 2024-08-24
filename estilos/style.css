@@ -32,7 +32,7 @@ header{
 /* Cabeçalho */
 header nav{
     display: flex;
-    gap: 0px 20px;
+    gap: 0px 15px;
 }
 
 header nav a{
