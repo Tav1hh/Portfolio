@@ -170,8 +170,8 @@ header nav a:hover{
     z-index: inherit;
     display: flex;
     justify-content: space-between;
-    border-top: 1px solid blue;
-    border-bottom: 1px solid blue;
+    /* border-top: 1px solid blue;
+    border-bottom: 1px solid blue; */
 }
 .btn{
     all:unset;
@@ -190,12 +190,12 @@ header nav a:hover{
     justify-content: left;
     padding: 5px;
     width: 80px;
-    background: linear-gradient(to right, black 10%, transparent 100%);
+    /* background: linear-gradient(to right, black 10%, transparent 100%); */
 }
 
 .right{
     justify-content: right;
-    background: linear-gradient(to left, black 10%, transparent 100%);
+    /* background: linear-gradient(to left, black 10%, transparent 100%); */
 
 
 }
@@ -203,10 +203,11 @@ header nav a:hover{
     /* cursor:pointer; */
     all:unset;
     pointer-events: all;
-    background-size: contain;
     width: 50px;
     height: 90px;
-    background: url(../imagens/arrow-left.png);
+    background: url(../imagens/arrow-left.png) center center no-repeat;
+    background-size: contain;
+    scale: 0.8;
     transition: translate 0.5s;
 }
 
@@ -215,10 +216,11 @@ header nav a:hover{
     cursor: pointer;
     all:unset;
     pointer-events: all;
-    background-size: contain;
     width: 50px;
     height: 90px;
     background: url(../imagens/arrow-right.png) center center no-repeat ;
+    background-size: contain;
+    scale: 0.8;
     transition: translate 0.5s;
 }
 
