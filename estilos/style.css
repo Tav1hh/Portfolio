@@ -330,11 +330,6 @@ footer img:hover{
     scale: 1.1;
 }
 
-@keyframes show-down{
-    
-}
-
-
 @keyframes carrosel {
     from {
         transform: translateX(100vw);
