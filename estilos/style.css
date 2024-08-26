@@ -118,10 +118,10 @@ header nav a:hover{
 /* About */
 
 .about{
-    max-width: 582px;
+    max-width: 950px;
     margin: auto;
     margin-bottom: 30px;
-    padding: 0px 20px;
+    padding: 0px 50px;
     color: #a9a9ab;
 }
 
