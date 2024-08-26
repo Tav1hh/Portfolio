@@ -67,7 +67,7 @@ header nav a:hover{
 }
 
 .principal div{
-    max-width: 300px;
+    max-width: 400px;
     width: 100%;
     /* border: 1px solid white; */
 }
@@ -131,7 +131,8 @@ header nav a:hover{
 
 .about p{
     text-align: justify;
-    margin-left: 20px;
+    text-indent: 30px;
+    /* margin-left: 20px; */
 }
 
 .about p strong{
@@ -228,16 +229,6 @@ header nav a:hover{
 
 .btn-right:hover,.btn-left:hover{
     translate: 0px -10px;
-}
-
-@keyframes carrosel {
-    from {
-        transform: translateX(100vw);
-    }
-    to{
-        /* transform: translateX(calc(-100vw + (100vw - 100%))); */
-        transform: translateX(0px);
-    }
 }
 
 .carrosel > div{
@@ -337,4 +328,19 @@ footer img{
 
 footer img:hover{
     scale: 1.1;
+}
+
+@keyframes show-down{
+    
+}
+
+
+@keyframes carrosel {
+    from {
+        transform: translateX(100vw);
+    }
+    to{
+        /* transform: translateX(calc(-100vw + (100vw - 100%))); */
+        transform: translateX(0px);
+    }
 }
