@@ -5,10 +5,10 @@ function redirectToLink(img) {
 
 function setImage(id,path){
     var img = document.getElementById(id)
-    img.setAttribute('src','./imagens/'+path+'-bk.png')
+    img.setAttribute('src','./public/img/'+path+'-bk.png')
 }
 
 function resetImage(id,path){
     var img = document.getElementById(id)
-    img.setAttribute('src','./imagens/'+path+'.png')
+    img.setAttribute('src','./public/img/'+path+'.png')
 }

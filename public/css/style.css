@@ -107,7 +107,7 @@ header nav a:hover{
 }
 
 .principal .img{
-    background: black url(../imagens/logo.jpeg) no-repeat center center;
+    background: black url(../img/logo.jpeg) no-repeat center center;
     background-size: contain;
     border-radius: 50%;
     width: 200px;
@@ -205,7 +205,7 @@ header nav a:hover{
     pointer-events: all;
     width: 50px;
     height: 90px;
-    background: url(../imagens/arrow-left.png) center center no-repeat;
+    background: url(../public/img/arrow-left.png) center center no-repeat;
     background-size: contain;
     scale: 0.8;
     outline: none;
@@ -219,7 +219,7 @@ header nav a:hover{
     pointer-events: all;
     width: 50px;
     height: 90px;
-    background: url(../imagens/arrow-right.png) center center no-repeat ;
+    background: url(../public/img/arrow-right.png) center center no-repeat ;
     background-size: contain;
     scale: 0.8;
     outline: none;
